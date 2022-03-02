@@ -1,8 +1,9 @@
 # build-spawn-test
 
 The CDK stack in `test_stack.ts` deploys a CodeBuild project that runs `build-args-shell-test.js`.
-This script builds a simple Dockerfile with 4 combinations of providing/not providing
-`--build-arg FOO=$FOO` and using/not using the `shell` option of `spawnSync`.
+This script uses `spawnSync` to build a simple Dockerfile with 4 combinations of providing/not providing
+`--build-arg FOO=$FOO` and using/not using the `shell` option of `spawnSync`. It then runs each
+image to illustrate the behavior of `--build-arg FOO=$FOO` with/without a shell environment.
 
 Expected behavior of `--build-arg FOO=$FOO` substitution:
 
