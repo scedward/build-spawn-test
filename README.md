@@ -21,8 +21,8 @@ Observed output from running the CodeBuild project:
 process.env.FOO is: bar
 building images...
 no-build-args-no-shell: FOO is: ()
-build-args-no-shell: FOO is: ($FOO)
 no-build-args-with-shell: FOO is: ()
+build-args-no-shell: FOO is: ($FOO)
 build-args-with-shell: FOO is: (bar)
 
 ...
